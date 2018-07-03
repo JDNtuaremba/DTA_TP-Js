@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+       var tab_age={
+           "anatole":19,
+           "bernard":45,
+           "christophe":34,
+           "dominique":55,
+           "franck":28,
+           "georges":78,
+           "lucas":12,
+           "madeleine":30,
+           "pierre":25
+       }
+
+       function giveage(){
+         
+         nomE=document.getElementById("nom").value;
+         nomE=nomE.charAt(0).toUpperCase()+nomE.substring(1);
+         alert(nomE+" a "+tab_age[document.getElementById("nom").value]+" ans");
+
+       }
+
+    </script>
+
+        <input type="text" id="nom"/>
+        <input type="button" value="Quel age au-tu?" onclick="giveage();"/>
+
+    
+
+</body>
+</html>
