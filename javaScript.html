@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+  <div id="madiv" style="height:150px;width:150px;background-color:black" ></div>
+    <input type="button" id="btn_rouge" value="rouge"/>
+    <input type="button" id="btn_bleu" value="bleu"/>
+    <input type="button" id="btn_vert" value="vert"/>
+    <input type="button" id="btn_black" value="noir"/>
+    
+    
+    <script type="text/javascript">
+      
+      function changeCoulor(event){
+        document.getElementById("madiv").style.backgroundColor=event.target.param
+      }
+    document.getElementById("btn_rouge").param='red'
+    document.getElementById("btn_rouge").onclick=changeCoulor
+    document.getElementById("btn_bleu").param="blue"
+    document.getElementById("btn_bleu").onclick=changeCoulor
+    document.getElementById("btn_vert").param="green"
+    document.getElementById("btn_vert").onclick=changeCoulor
+    document.getElementById("btn_black").param="black"
+    document.getElementById("btn_black").onclick=changeCoulor
+
+    </script>
+
+    
+
+</body>
+</html>
